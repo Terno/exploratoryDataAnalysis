@@ -9,7 +9,7 @@ house_a_data<-cbind(house_a_data, "DateTime" = as.POSIXct(paste(house_a_data$Dat
 
 
 #plot3
-jpeg("plot3.jpg", width = 350, height = 350)
+png("plot3.png", width = 350, height = 350)
 with(house_a_data, {plot(Sub_metering_1 ~ DateTime, type="l", xlab= "", ylab="Energy Sub Metering")})
 
 lines(house_a_data$Sub_metering_2 ~ house_a_data$DateTime, col = 'Red')

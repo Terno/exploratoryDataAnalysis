@@ -9,7 +9,7 @@ house_a_data<-cbind(house_a_data, "DateTime" = as.POSIXct(paste(house_a_data$Dat
 
 
 #plot4
-jpeg("plot4.jpg", width = 350, height = 350)
+png("plot4.png", width = 350, height = 350)
 par(mfrow=c(2,2))
 plot(house_a_data$Global_active_power ~ house_a_data$DateTime, type="l")
 plot(house_a_data$Voltage ~ house_a_data$DateTime, type="l")
