@@ -9,6 +9,6 @@ house_a_data<-cbind(house_a_data, "DateTime" = as.POSIXct(paste(house_a_data$Dat
 
 
 #plot2
-png("plot2.jpg", width = 350, height = 350)
+png("plot2.png", width = 350, height = 350)
 plot(house_a_data$Global_active_power ~ house_a_data$DateTime, type="l", xlab= "", ylab="Global Active power (kilowatts)")
 dev.off()
